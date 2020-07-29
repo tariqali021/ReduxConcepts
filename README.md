@@ -24,7 +24,6 @@
             }
             return state;
         }
-
 - Create a Store
     eg :
         const store = redux.createStore(rootReducer);   // store.getState();
@@ -40,19 +39,18 @@
         });
 
 ### Actions
-    
-    - basically the events triggered in component like add, remove, delete etc..
+- basically the events triggered in component like add, remove, delete etc..
+
 ### Reducers
-    - A pure function that receives state & action as input and return only the state.
+- A pure function that receives state & action as input and return only the state.
+
 ### Subscription
-    - Store triggers all subscriptions whenever the state is updated, and passed this state back to component as props.
+- Store triggers all subscriptions whenever the state is updated, and passed this state back to component as props.
 
 ### Store
-    - Store is initialized with reducer. We have only one reducer either single or combined by multiple.
-
+- Store is initialized with reducer. We have only one reducer either single or combined by multiple.
 
 ### Where to use 
-    
 - Local UI State        [ Mostly handled within components ]
     eg: 
         - update style, show/hide modal etc..
@@ -64,7 +62,6 @@
         - actions related to session handling like isUserAuthenticated, filterSetByUser etc...
 
 ### Where not to use
-    
 - For two way binding
 
 
